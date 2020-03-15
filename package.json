@@ -1,0 +1,17 @@
+{
+  "name": "jam",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "author": "Laurin <cyanjs@outlook.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
