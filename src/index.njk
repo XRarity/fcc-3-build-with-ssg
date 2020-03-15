@@ -5,5 +5,11 @@ layout: base.njk
 
 <div class="container">
         This is a page for you
+        {% for article in news.articles %}
+        <ul>
+        <li><h2><a href="{{article.url}}">{{ article.title }}</a></h2></li>
+        <span>{{ article.source.name }} - <time>{{article.publishedAt}}
+</time></span>        </ul>
+        {% endfor %}
 </div>
 <script src="/src/vibe.js"></script>
