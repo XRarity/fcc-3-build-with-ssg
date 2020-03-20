@@ -1,6 +1,11 @@
 ---
-title: A page for you
+title: Daily localized Breifing
 layout: base.njk
+pagination:
+        data: news
+        size: 1
+        alias: news
+permalink: /{{ news.country }}/index.html
 ---
 
 <div class="container">
@@ -12,4 +17,4 @@ layout: base.njk
 </time></span>        </ul>
         {% endfor %}
 </div>
-<script src="/src/vibe.js"></script>
+<script src="/js/location.js"></script>
